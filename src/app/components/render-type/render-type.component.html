@@ -14,9 +14,10 @@
     <a *ngIf="!item.value.includes('0x')" href="https://etherscan.io/address/0x{{ item.value }}" target="_blank">Ethereum Address: 0x{{ item.value }}</a>
     <a *ngIf="item.value.includes('0x')" href="https://etherscan.io/address/{{ item.value }}" target="_blank">Ethereum Address:  {{ item.value }}</a>
   </div>
-  <div *ngSwitchCase="'Balance'">{{ formatBalance(item.value) | number:'1.0-15'}} {{ networkTokenSymbol }}</div>
-  <div *ngSwitchCase="'Compact<Balance>'">{{ formatBalance(item.value) | number:'1.0-15'}} {{ networkTokenSymbol }}</div>
-  <div *ngSwitchCase="'Compact<BalanceOf>'">{{ formatBalance(item.value) | number:'1.0-15'}} {{ networkTokenSymbol }}</div>
+  <div *ngSwitchCase="'Balance'">{{ formatBalance(item.value) | number:'1.0-15'}}</div>
+  <div *ngSwitchCase="'Compact<Balance>'">{{ formatBalance(item.value) | number:'1.0-15'}}</div>
+  <div *ngSwitchCase="'Compact<BalanceOf>'">{{ formatBalance(item.value) | number:'1.0-15'}}</div>
+  <div *ngSwitchCase="'AssetId'">{{ item.currency }}</div>
   <div *ngSwitchCase="'Compact<Moment>'">{{ item.value | date:'medium' }}</div>
   <div *ngSwitchCase="'Bytes'"><markdown [data]="item.value"></markdown></div>
   <div *ngSwitchCase="'DownloadableBytesHash'"><a routerLink="{{ networkURLPrefix }}/extrinsic-param/download/{{ item.value }}">Download binary</a></div>

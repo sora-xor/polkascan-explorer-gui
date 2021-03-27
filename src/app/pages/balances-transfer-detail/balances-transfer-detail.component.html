@@ -31,7 +31,7 @@
                             </tr>
                             <tr>
                               <td>{{ 'BalanceTransfer.Value' | translate }}</td>
-                              <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15' }} {{ networkTokenSymbol }}</td>
+                              <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15' }} {{ balanceTransfer.attributes.currency }}</td>
                             </tr>
                              <tr>
                               <td>{{ 'BalanceTransfer.Fee' | translate }}</td>
