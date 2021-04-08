@@ -82,14 +82,14 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.networkstats$ = this.networkstatsService.get('latest');
 
       // Retrieve charts
-      if (environment.jsonApiDiscoveryRootUrl) {
+      //if (environment.jsonApiDiscoveryRootUrl) {
 
-        this.networkColor = '#' + network.attributes.color_code;
+      // this.networkColor = '#' + network.attributes.color_code;
 
-        this.totalTransactionsDaychart$ = this.analyticsChartService.get('utcday-extrinsics_signed-sum-line-14');
-        this.cumulativeAccountsDayChart$ = this.analyticsChartService.get('utcday-accounts_new-sum-line-14');
-        this.averageBlocktimeDaychart$ = this.analyticsChartService.get('utcday-blocktime-avg-line-14');
-      }
+      // this.totalTransactionsDaychart$ = this.analyticsChartService.get('utcday-extrinsics_signed-sum-line-14');
+      // this.cumulativeAccountsDayChart$ = this.analyticsChartService.get('utcday-accounts_new-sum-line-14');
+      //  this.averageBlocktimeDaychart$ = this.analyticsChartService.get('utcday-blocktime-avg-line-14');
+      //}
     });
 
     const blockUpdateCounter = interval(6000);

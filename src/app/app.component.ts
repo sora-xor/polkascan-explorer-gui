@@ -61,7 +61,7 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {
     angulartics.startTracking();
     router.events.subscribe((val) => {
-        this.showNavigation = false;
+      this.showNavigation = false;
     });
     translate.addLangs(this.langs);
     translate.setDefaultLang('en');
@@ -73,7 +73,7 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit() {
 
     if (environment.jsonApiDiscoveryRootUrl) {
-      this.networkService.all({remotefilter: {visible: true}}).subscribe(networks => {
+      this.networkService.all().subscribe(networks => {
         this.networks = networks;
       });
     }
