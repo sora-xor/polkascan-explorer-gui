@@ -74,6 +74,10 @@
                             <span class="error-message" *ngIf="extrinsic.attributes.error_message">{{ extrinsic.attributes.error_message }}</span>
                           </td>
                         </tr>
+                        <tr>
+                          <td width="15%">{{ 'extrinsic-table.Fee' | translate }}</td>
+                          <td>{{ formatBalance(extrinsic.attributes.fee) | number:'1.0-15' }} {{ networkTokenSymbol }}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

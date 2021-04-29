@@ -540,8 +540,9 @@
 		"Parameters": "Параметри",
 		"Result": "Результат",
 		"Signature": "Підпис",
-		"Timestamp": "Позначка часу"
-	},
+		"Timestamp": "Позначка часу",
+    "Fee": "Комісія"
+  },
 	"log-table": {
 		"Block": "Блок",
 		"Data": "Дані",

@@ -540,8 +540,9 @@
 		"Parameters": "Parametreler",
 		"Result": "Sonuç",
 		"Signature": "imza",
-		"Timestamp": "Zaman Damgası"
-	},
+		"Timestamp": "Zaman Damgası",
+    "Fee": "Ücret"
+  },
 	"log-table": {
 		"Block": "Blok",
 		"Data": "Veri",

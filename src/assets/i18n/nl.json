@@ -540,8 +540,9 @@
 		"Parameters": "parameters",
 		"Result": "resultaat",
 		"Signature": "Handtekening",
-		"Timestamp": "tijdstempel"
-	},
+		"Timestamp": "tijdstempel",
+    "Fee": "honorarium"
+  },
 	"log-table": {
 		"Block": "Blok",
 		"Data": "Gegevens",

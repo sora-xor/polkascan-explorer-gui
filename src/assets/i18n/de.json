@@ -540,8 +540,9 @@
 		"Parameters": "Parameter",
 		"Result": "Ergebnis",
 		"Signature": "Signatur",
-		"Timestamp": "Zeitstempel"
-	},
+		"Timestamp": "Zeitstempel",
+    "Fee": "Gebühr"
+  },
 	"log-table": {
 		"Block": "Block",
 		"Data": "Daten",

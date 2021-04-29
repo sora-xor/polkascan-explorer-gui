@@ -540,8 +540,9 @@
 		"Parameters": "parametri",
 		"Result": "Risultato",
 		"Signature": "Firma",
-		"Timestamp": ""
-	},
+		"Timestamp": "",
+    "Fee": ""
+  },
 	"log-table": {
 		"Block": "Bloccare",
 		"Data": "Dati",
