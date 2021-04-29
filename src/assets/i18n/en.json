@@ -540,8 +540,9 @@
 		"Parameters": "Parameters",
 		"Result": "Result",
 		"Signature": "Signature",
-		"Timestamp": "Timestamp"
-	},
+		"Timestamp": "Timestamp",
+    "Fee": "Fee"
+  },
 	"log-table": {
 		"Block": "Block",
 		"Data": "Data",

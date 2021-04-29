@@ -30,19 +30,17 @@ import {environment} from "../../environments/environment";
 })
 export class NetworkService extends Service<Network> {
 
-    public constructor() {
-        super();
-        this.register();
-    }
+  public constructor() {
+    super();
+    this.register();
+  }
 
-    public resource = Network;
-    public type = 'network';
-    public path = 'network';
+  public resource = Network;
 
-    public jsonApiRootUrl = environment.jsonApiDiscoveryRootUrl;
+  public jsonApiRootUrl = environment.jsonApiDiscoveryRootUrl;
 
-    public getPrePath(): string {
-      return this.jsonApiRootUrl;
-    }
+  public getPath(): string {
+    return this.jsonApiRootUrl;
+  }
 
 }

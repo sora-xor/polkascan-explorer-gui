@@ -540,8 +540,9 @@
 		"Parameters": "मापदंडों",
 		"Result": "परिणाम",
 		"Signature": "हस्ताक्षर",
-		"Timestamp": "टाइमस्टैम्प"
-	},
+		"Timestamp": "टाइमस्टैम्प",
+    "Fee": "शुल्क"
+  },
 	"log-table": {
 		"Block": "ब्लॉक",
 		"Data": "डेटा",

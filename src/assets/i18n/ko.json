@@ -540,8 +540,9 @@
 		"Parameters": "매개변수",
 		"Result": "결과",
 		"Signature": "서명",
-		"Timestamp": "타임 스탬프"
-	},
+		"Timestamp": "타임 스탬프",
+    "Fee": "수수료"
+  },
 	"log-table": {
 		"Block": "블록",
 		"Data": "데이터",

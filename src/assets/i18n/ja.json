@@ -540,8 +540,9 @@
 		"Parameters": "パラメーター",
 		"Result": "結果",
 		"Signature": "署名",
-		"Timestamp": "タイムスタンプ"
-	},
+		"Timestamp": "タイムスタンプ",
+    "Fee": "費用"
+  },
 	"log-table": {
 		"Block": "ブロック",
 		"Data": "データ",

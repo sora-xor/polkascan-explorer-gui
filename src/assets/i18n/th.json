@@ -540,8 +540,9 @@
 		"Parameters": "พารามิเตอร์",
 		"Result": "ผลลัพธ์",
 		"Signature": "ลายเซ็น",
-		"Timestamp": "เวลา"
-	},
+		"Timestamp": "เวลา",
+    "Fee": "ค่าธรรมเนียม"
+  },
 	"log-table": {
 		"Block": "บล็อก",
 		"Data": "ข้อมูล",

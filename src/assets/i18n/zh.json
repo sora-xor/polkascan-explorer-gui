@@ -540,8 +540,9 @@
 		"Parameters": "参数",
 		"Result": "结果",
 		"Signature": "签名",
-		"Timestamp": "时间"
-	},
+		"Timestamp": "时间",
+    "Fee": "手续费"
+  },
 	"log-table": {
 		"Block": "区块",
 		"Data": "数据",
