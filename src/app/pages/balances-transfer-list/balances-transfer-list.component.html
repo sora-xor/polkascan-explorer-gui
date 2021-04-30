@@ -33,7 +33,7 @@
                                   <td class="is-hidden-mobile"><a routerLink="{{ networkURLPrefix }}/block/{{ balanceTransfer.attributes.block_id }}">{{ balanceTransfer.attributes.block_id }}</a></td>
                                   <td class="is-hidden-mobile"><a routerLink="{{ networkURLPrefix }}/account/{{ balanceTransfer.attributes.sender.attributes.address }}" class="address-format"><app-address [account]="balanceTransfer.attributes.sender"></app-address></a></td>
                                   <td><a routerLink="{{ networkURLPrefix }}/account/{{ balanceTransfer.attributes.destination.attributes.address }}" class="address-format"><app-address [account]="balanceTransfer.attributes.destination"></app-address></a></td>
-                                  <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15'}} {{ networkTokenSymbol }}</td>
+                                  <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15'}} {{ balanceTransfer.attributes.currency }}</td>
                                   <td width="5%"><a class="button is-small is-primary" routerLink="{{ networkURLPrefix }}/balances/transfer/{{ balanceTransfer.id }}">{{ 'BalanceTransferList.Details' | translate }}</a></td>
                                 </tr>
                             </tbody>
