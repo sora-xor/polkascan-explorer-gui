@@ -432,7 +432,8 @@
 		"item_Council Accounts": "協議会アカウント",
 		"item_Events": "イベント",
 		"item_Identities": "アイデンティティ",
-		"item_Indices": "",
+    "item_Assets": "",
+    "item_Indices": "",
 		"item_Inherents": "固有",
 		"item_Logs": "ログ",
 		"item_Modules": "モジュール",
@@ -725,5 +726,18 @@
 		"Success": "成功",
 		"Transaction ID": "トランザクションID",
 		"Transactions": "トランザクション"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Assets",
+    "AssetId": "Asset Id",
+    "Symbol": "Asset Symbol",
+    "Name": "Asset Name",
+    "Precision": "Precision",
+    "IsMintable": "Is mintable",
+    "No items": "No items",
+    "View next": "View next"
+  },
+  "Asset-Detail": {
+    "Asset": "Asset"
+  }
 }

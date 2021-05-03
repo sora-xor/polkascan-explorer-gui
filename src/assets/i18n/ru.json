@@ -432,6 +432,7 @@
 		"item_Council Accounts": "Совет",
 		"item_Events": "События",
 		"item_Identities": "Персонализированные аккаунты",
+    "item_Assets": "Ассеты",
 		"item_Indices": "Indices",
 		"item_Inherents": "Нативные события",
 		"item_Logs": "Логи",
@@ -725,5 +726,18 @@
 		"Success": "Успешно",
 		"Transaction ID": "ID транзакции",
 		"Transactions": "Транзакции"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Ассеты",
+    "AssetId": "Идентификатор",
+    "Symbol": "Тикер",
+    "Name": "Название",
+    "Precision": "Точность",
+    "IsMintable": "Можно минтить",
+    "No items": "Нет элементов",
+    "View next": "Смотреть дальше"
+  },
+  "Asset-Detail": {
+    "Asset": "Ассет"
+  }
 }

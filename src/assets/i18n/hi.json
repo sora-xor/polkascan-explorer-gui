@@ -432,7 +432,8 @@
 		"item_Council Accounts": "परिषद",
 		"item_Events": "घटनाओं",
 		"item_Identities": "पहचाने",
-		"item_Indices": "",
+    "item_Assets": "Assets",
+    "item_Indices": "",
 		"item_Inherents": "इँगेरेंट्स",
 		"item_Logs": "लोग्स",
 		"item_Modules": "मॉड्यूल्स",
@@ -725,5 +726,18 @@
 		"Success": "सफलता",
 		"Transaction ID": "लेन-देन की पहचान",
 		"Transactions": "लेन-देन"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Assets",
+    "AssetId": "Asset Id",
+    "Symbol": "Asset Symbol",
+    "Name": "Asset Name",
+    "Precision": "Precision",
+    "IsMintable": "Is mintable",
+    "No items": "No items",
+    "View next": "View next"
+  },
+  "Asset-Detail": {
+    "Asset": "Asset"
+  }
 }

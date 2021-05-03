@@ -432,7 +432,8 @@
 		"item_Council Accounts": "Rat",
 		"item_Events": "Events",
 		"item_Identities": "Identitäten",
-		"item_Indices": "Indices",
+    "item_Assets": "Assets",
+    "item_Indices": "Indices",
 		"item_Inherents": "Inherents",
 		"item_Logs": "Logs",
 		"item_Modules": "Module",
@@ -725,5 +726,18 @@
 		"Success": "Erfolg",
 		"Transaction ID": "Transaktions-ID",
 		"Transactions": "Transaktionen"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Assets",
+    "AssetId": "Asset Id",
+    "Symbol": "Asset Symbol",
+    "Name": "Asset Name",
+    "Precision": "Precision",
+    "IsMintable": "Is mintable",
+    "No items": "No items",
+    "View next": "View next"
+  },
+  "Asset-Detail": {
+    "Asset": "Asset"
+  }
 }

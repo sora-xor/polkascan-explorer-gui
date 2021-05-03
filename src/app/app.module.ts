@@ -122,6 +122,8 @@ import { PreimageTableComponent } from './components/preimage-table/preimage-tab
 import { AddressComponent } from './components/address/address.component';
 import {MarkdownModule} from 'ngx-markdown';
 import { ExtrinsicParamDownloadComponent } from './pages/extrinsic-param-download/extrinsic-param-download.component';
+import {AssetListComponent} from "./pages/asset-list/asset-list.component";
+import {AssetDetailComponent} from "./pages/asset-detail/asset-detail.component";
 
 export class MyClock extends TimeagoClock {
   tick(then: number): Observable<number> {
@@ -204,7 +206,9 @@ export class MyClock extends TimeagoClock {
     DemocracyPreimageDetailComponent,
     PreimageTableComponent,
     AddressComponent,
-    ExtrinsicParamDownloadComponent
+    ExtrinsicParamDownloadComponent,
+    AssetListComponent,
+    AssetDetailComponent
   ],
   imports: [
     BrowserModule,

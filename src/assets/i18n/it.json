@@ -432,7 +432,8 @@
 		"item_Council Accounts": "",
 		"item_Events": "Eventi",
 		"item_Identities": "",
-		"item_Indices": "",
+    "item_Assets": "",
+    "item_Indices": "",
 		"item_Inherents": "Inherents",
 		"item_Logs": "logs",
 		"item_Modules": "Moduli",
@@ -725,5 +726,18 @@
 		"Success": "Successo",
 		"Transaction ID": "ID transazione",
 		"Transactions": "Le Transazioni"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Assets",
+    "AssetId": "Asset Id",
+    "Symbol": "Asset Symbol",
+    "Name": "Asset Name",
+    "Precision": "Precision",
+    "IsMintable": "Is mintable",
+    "No items": "No items",
+    "View next": "View next"
+  },
+  "Asset-Detail": {
+    "Asset": "Asset"
+  }
 }

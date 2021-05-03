@@ -432,6 +432,7 @@
 		"item_Council Accounts": "Council",
 		"item_Events": "活动",
 		"item_Identities": "Identities",
+    "item_Assets": "",
 		"item_Indices": "指数",
 		"item_Inherents": "内在因素",
 		"item_Logs": "日志",
@@ -725,5 +726,18 @@
 		"Success": "成功",
 		"Transaction ID": "交易ID",
 		"Transactions": "交易"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Assets",
+    "AssetId": "Asset Id",
+    "Symbol": "Asset Symbol",
+    "Name": "Asset Name",
+    "Precision": "Precision",
+    "IsMintable": "Is mintable",
+    "No items": "No items",
+    "View next": "View next"
+  },
+  "Asset-Detail": {
+    "Asset": "Asset"
+  }
 }

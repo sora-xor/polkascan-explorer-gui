@@ -1,0 +1,50 @@
+<div *ngIf="asset$ | async as asset">
+
+  <div *ngIf="!asset.is_loading">
+    <section class="info-tiles">
+      <div class="card events-card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ 'Asset-Detail.Asset' | translate }} {{ asset.attributes.asset_id }}
+          </p>
+          <a [routerLink]="" fragment="details" class="card-header-icon" aria-label="more options">
+            <span class="icon"><i class="fa fa-book fa-2x"></i></span>
+          </a>
+        </header>
+        <div class="card-table">
+          <div class="content">
+            <app-loading-box *ngIf="!asset || asset.is_loading"></app-loading-box>
+            <table class="table is-fullwidth is-striped" *ngIf="asset">
+              <thead>
+              <tr>
+                <th></th>
+                <th>{{ 'Asset-list.AssetId' | translate }}</th>
+                <th>{{ 'Asset-list.Symbol' | translate }}</th>
+                <th>{{ 'Asset-list.Name' | translate }}</th>
+                <th>{{ 'Asset-list.Precision' | translate }}</th>
+                <th>{{ 'Asset-list.IsMintable' | translate }}</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td width="5%">
+                  <i class="fa fa-book"></i>
+                </td>
+                <td>{{ asset.attributes.asset_id }}</td>
+                <td>{{ asset.attributes.symbol }}</td>
+                <td>{{ asset.attributes.name }}</td>
+                <td>{{ asset.attributes.precision }}</td>
+                <td>
+                  <i *ngIf="asset.attributes.is_mintable === true" class="fa fa-check" style="color: forestgreen"></i>
+                  <i *ngIf="asset.attributes.is_mintable === false" class="fa fa-times" style="color: darkred"></i>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <div class="no-items" *ngIf="asset && asset.data == 0 && !asset.is_loading">{{ 'Asset-list.No items' | translate }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

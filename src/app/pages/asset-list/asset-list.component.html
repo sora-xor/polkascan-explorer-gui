@@ -1,0 +1,61 @@
+<div class="columns">
+  <div class="column is-12">
+    <app-polkascan-header></app-polkascan-header>
+    <section>
+      <div class="card ">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ 'Asset-list.Assets' | translate }}
+          </p>
+          <a [routerLink]="" fragment="list" class="card-header-icon" aria-label="more options">
+                      <span class="icon">
+                        <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                      </span>
+          </a>
+        </header>
+        <div class="card-table">
+          <div class="content">
+            <app-loading-box *ngIf="!assets || assets.is_loading"></app-loading-box>
+            <table class="table is-fullwidth is-striped" *ngIf="assets && assets.data.length > 0">
+              <thead>
+              <tr>
+                <th></th>
+                <th>{{ 'Asset-list.AssetId' | translate }}</th>
+                <th>{{ 'Asset-list.Symbol' | translate }}</th>
+                <th>{{ 'Asset-list.Name' | translate }}</th>
+                <th>{{ 'Asset-list.Precision' | translate }}</th>
+                <th>{{ 'Asset-list.IsMintable' | translate }}</th>
+<!--
+                <th></th>
+-->
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let asset of assets.data; trackBy: assets.trackBy">
+                <td width="5%">
+                  <i class="fa fa-book"></i>
+                </td>
+                <td>{{ asset.attributes.asset_id }}</td>
+                <td>{{ asset.attributes.symbol }}</td>
+                <td>{{ asset.attributes.name }}</td>
+                <td>{{ asset.attributes.precision }}</td>
+                <td>
+                  <i *ngIf="asset.attributes.is_mintable === true" class="fa fa-check" style="color: forestgreen"></i>
+                  <i *ngIf="asset.attributes.is_mintable === false" class="fa fa-times" style="color: darkred"></i>
+                </td>
+<!--
+                <td width="5%"><a class="button is-small is-primary" routerLink="{{ networkURLPrefix }}/asset/{{ asset.attributes.asset_id }}">{{ 'Asset-list.Details' | translate }}</a></td>
+-->
+              </tr>
+              </tbody>
+            </table>
+            <div class="no-items" *ngIf="assets && assets.data.length == 0 && !assets.is_loading">{{ 'Asset-list.No items' | translate }}</div>
+          </div>
+        </div>
+        <footer class="card-footer" *ngIf="assets && assets.data.length == 25">
+          <a routerLink="." [queryParams]="{ page: currentPage + 1}" class="card-footer-item">{{ 'Asset-list.View next' | translate }}</a>
+        </footer>
+      </div>
+    </section>
+  </div>
+</div>

@@ -55,6 +55,7 @@ import {TechCommProposalService} from './tech-comm-proposal.service';
 import {TreasuryProposalService} from './treasury-proposal.service';
 import {DemocracyPreimageService} from './democracy-preimage.service';
 import {RuntimeErrorService} from './runtime-error.service';
+import {AssetService} from './asset.service'
 
 const STORAGE_KEY = 'polkascan-config';
 
@@ -102,6 +103,7 @@ export class AppConfigService {
     private runtimeConstantService: RuntimeConstantService,
     private runtimeErrorService: RuntimeErrorService,
     private analyticsChartService: AnalyticsChartService,
+    private assetService: AssetService,
     @Inject(LOCAL_STORAGE) private storage: StorageService
   ) { }
 
@@ -158,6 +160,7 @@ export class AppConfigService {
       this.runtimeConstantService.jsonApiRootUrl = network.attributes.api_url_root;
       this.runtimeErrorService.jsonApiRootUrl = network.attributes.api_url_root;
       this.analyticsChartService.jsonApiRootUrl = network.attributes.api_url_root;
+      this.assetService.jsonApiRootUrl = network.attributes.api_url_root;
 
       this.networkURLPrefix = '/' + network.attributes.network_id;
 
