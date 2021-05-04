@@ -80,6 +80,8 @@ import {TreasuryProposalDetailComponent} from './pages/treasury-proposal-detail/
 import {DemocracyPreimageListComponent} from './pages/democracy-preimage-list/democracy-preimage-list.component';
 import {DemocracyPreimageDetailComponent} from './pages/democracy-preimage-detail/democracy-preimage-detail.component';
 import {ExtrinsicParamDownloadComponent} from './pages/extrinsic-param-download/extrinsic-param-download.component';
+import {AssetListComponent} from "./pages/asset-list/asset-list.component";
+import {AssetDetailComponent} from "./pages/asset-detail/asset-detail.component";
 
 const routes: Routes = [
   { path: '', component: NetworkOverviewComponent, },
@@ -174,6 +176,8 @@ const routes: Routes = [
       { path: 'analytics/search/:query', component: AnalyticsSearchComponent},
       { path: 'analytics/charts', component: AnalyticsChartsComponent },
       { path: 'analytics/chart/:id', component: AnalyticsChartDetailComponent },
+      { path: 'asset', component: AssetListComponent},
+      { path: 'asset/:asset_id', component: AssetDetailComponent}
     ]},
   { path: 'settings', component: SettingsComponent},
   { path: '404', component: NotFoundComponent},

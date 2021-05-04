@@ -432,6 +432,7 @@
 		"item_Council Accounts": "Рада",
 		"item_Events": "Події",
 		"item_Identities": "Персоналізовані акаунти",
+    "item_Assets": "",
 		"item_Indices": "Indices",
 		"item_Inherents": "Нативні події",
 		"item_Logs": "Логи",
@@ -725,5 +726,18 @@
 		"Success": "Успішно",
 		"Transaction ID": "ID транзакції",
 		"Transactions": "Транзакції"
-	}
+	},
+  "Asset-list": {
+    "Assets": "Assets",
+    "AssetId": "Asset Id",
+    "Symbol": "Asset Symbol",
+    "Name": "Asset Name",
+    "Precision": "Precision",
+    "IsMintable": "Is mintable",
+    "No items": "No items",
+    "View next": "View next"
+  },
+  "Asset-Detail": {
+    "Asset": "Asset"
+  }
 }
