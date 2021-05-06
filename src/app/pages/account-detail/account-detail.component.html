@@ -305,7 +305,7 @@
                                   <td class="current-account"><span class="address-mobile-format"><app-address [account]="account"></app-address></span></td>
                                 </ng-container>
 
-                                <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15' }} {{ networkTokenSymbol }}</td>
+                                <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15' }} {{ balanceTransfer.attributes?.currency }}</td>
                                 <td width="5%"><a class="button is-small is-primary" routerLink="{{ networkURLPrefix }}/event/{{ balanceTransfer.id }}">Details</a></td>
                               </tr>
                           </tbody>
