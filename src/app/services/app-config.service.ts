@@ -56,6 +56,8 @@ import {TreasuryProposalService} from './treasury-proposal.service';
 import {DemocracyPreimageService} from './democracy-preimage.service';
 import {RuntimeErrorService} from './runtime-error.service';
 import {AssetService} from './asset.service'
+import {EthereumBridgeIncomeTransferService} from "./ethereum-bridge-income-transfer.service";
+import {EthereumBridgeOutcomeTransferService} from "./ethereum-bridge-outcome-transfer.service";
 
 const STORAGE_KEY = 'polkascan-config';
 
@@ -104,6 +106,9 @@ export class AppConfigService {
     private runtimeErrorService: RuntimeErrorService,
     private analyticsChartService: AnalyticsChartService,
     private assetService: AssetService,
+    private ethereumBridgeIncomeTransferService: EthereumBridgeIncomeTransferService,
+    private ethereumBridgeOutcomeTransferService: EthereumBridgeOutcomeTransferService,
+
     @Inject(LOCAL_STORAGE) private storage: StorageService
   ) { }
 
@@ -161,6 +166,8 @@ export class AppConfigService {
       this.runtimeErrorService.jsonApiRootUrl = network.attributes.api_url_root;
       this.analyticsChartService.jsonApiRootUrl = network.attributes.api_url_root;
       this.assetService.jsonApiRootUrl = network.attributes.api_url_root;
+      this.ethereumBridgeIncomeTransferService.jsonApiRootUrl = network.attributes.api_url_root;
+      this.ethereumBridgeOutcomeTransferService.jsonApiRootUrl = network.attributes.api_url_root;
 
       this.networkURLPrefix = '/' + network.attributes.network_id;
 
