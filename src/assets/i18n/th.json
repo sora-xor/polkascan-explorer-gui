@@ -284,7 +284,9 @@
 		"Number": "จำนวน",
 		"Runtime Versions": "เวอร์ชันรันไทม์",
 		"Sender": "ผู้ส่ง",
-		"Transactions": "รายการธุรกรรม"
+		"Transactions": "รายการธุรกรรม",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "ผู้สร้าง",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "บัญชีการคลัง",
 		"item_Types": "ประเภท",
 		"item_Upgrade_history": "ประวัติการอัพเกรด",
-		"item_Validator Accounts": "บัญชีผู้ตรวจสอบ"
-	},
+		"item_Validator Accounts": "บัญชีผู้ตรวจสอบ",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
+  },
 	"Network-overview": {
 		"Explore": "สำรวจ",
 		"IntroductionText": "POLKASCAN เป็นส่วนหนึ่งของ WEB3SCAN และนำเสนอข้อมูลแบบเรียลไทม์ WEB3SCAN ทำให้ข้อมูลเกี่ยวกับบล็อกเชนสามารถเข้าถึงและเข้าใจได้",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

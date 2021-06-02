@@ -284,7 +284,9 @@
 		"Number": "区块",
 		"Runtime Versions": "运行时版本",
 		"Sender": "来自",
-		"Transactions": "交易"
+		"Transactions": "交易",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "发起人",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "财政",
 		"item_Types": "类型",
 		"item_Upgrade_history": "升级历史记录",
-		"item_Validator Accounts": "验证人"
-	},
+		"item_Validator Accounts": "验证人",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
+  },
 	"Network-overview": {
 		"Explore": "探索",
 		"IntroductionText": "POLKASCAN是WEB3SCAN的一部分，并提供实时多链数据。 WEB3SCAN使区块链数据可访问并可理解",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

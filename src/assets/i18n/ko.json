@@ -284,7 +284,9 @@
 		"Number": "번호",
 		"Runtime Versions": "런타임 버전",
 		"Sender": "발송자",
-		"Transactions": "거래 사항"
+		"Transactions": "거래 사항",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "만든이",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "재무부 계정",
 		"item_Types": "형식",
 		"item_Upgrade_history": "업그레이드 기록",
-		"item_Validator Accounts": "검증자 계정"
-	},
+		"item_Validator Accounts": "검증자 계정",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
+  },
 	"Network-overview": {
 		"Explore": "살펴보기",
 		"IntroductionText": "소개 텍스트",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }
