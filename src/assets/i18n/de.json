@@ -284,7 +284,9 @@
 		"Number": "Nummer",
 		"Runtime Versions": "Laufzeitversionen",
 		"Sender": "Sender",
-		"Transactions": "Transaktionen"
+		"Transactions": "Transaktionen",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "Autor",
@@ -447,7 +449,9 @@
 		"item_Treasury Accounts": "Kassen",
 		"item_Types": "Typen",
 		"item_Upgrade_history": "Upgradeverlauf",
-		"item_Validator Accounts": "Validierer"
+		"item_Validator Accounts": "Validierer",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
 	},
 	"Network-overview": {
 		"Explore": "Entdecken",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

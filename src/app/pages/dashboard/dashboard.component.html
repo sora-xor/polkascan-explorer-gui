@@ -58,6 +58,32 @@
                     </article>
                 </div>
                 <div class="tile is-parent is-2-mobile">
+                  <article class="tile is-child box">
+                    <a routerLink="{{ networkURLPrefix }}/ethereum-bridge/income">
+                      <div>
+                            <span class="icon">
+                                <i class="fa fa-file-signature fa-2x"></i>
+                            </span>
+                        <p *ngIf="networkstats$ | async as networkstats" class="title">{{ networkstats.attributes.total_bridge_income | number: '1.'}}</p>
+                        <p class="subtitle">{{ 'DashBoard.EthereumToSORA' | translate }}</p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="tile is-parent is-2-mobile">
+                  <article class="tile is-child box">
+                    <a routerLink="{{ networkURLPrefix }}/ethereum-bridge/outcome">
+                      <div>
+                              <span class="icon">
+                                  <i class="fa fa-file-signature fa-2x"></i>
+                              </span>
+                        <p *ngIf="networkstats$ | async as networkstats" class="title">{{ networkstats.attributes.total_bridge_outcome | number: '1.'}}</p>
+                        <p class="subtitle">{{ 'DashBoard.SORAtoEthereum' | translate }}</p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="tile is-parent is-2-mobile">
                     <article class="tile is-child box">
                       <a routerLink="{{ networkURLPrefix }}/event">
                         <div>

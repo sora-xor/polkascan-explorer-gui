@@ -284,7 +284,9 @@
 		"Number": "संख्या",
 		"Runtime Versions": "रंटिम संस्करणों",
 		"Sender": "से",
-		"Transactions": "लेन-देन"
+		"Transactions": "लेन-देन",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "रचयिता",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "कोषागारों",
 		"item_Types": "प्रकार",
 		"item_Upgrade_history": "इतिहास को उन्नति करें",
-		"item_Validator Accounts": "प्रमाणकों"
-	},
+		"item_Validator Accounts": "प्रमाणकों",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
+  },
 	"Network-overview": {
 		"Explore": "अन्वेष",
 		"IntroductionText": "POLKASCAN WEB3SCAN का हिस्सा है और रियल-टाइम मल्टी-चेन डेटा प्रदान करता है। WEB3SCAN ब्लॉकचेन डेटा को सुलभ और समझने योग्य बनाता है।",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

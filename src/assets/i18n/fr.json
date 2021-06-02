@@ -284,7 +284,9 @@
 		"Number": "Nombre",
 		"Runtime Versions": "Versions d'exécution",
 		"Sender": "Envoyeur",
-		"Transactions": "Transactions"
+		"Transactions": "Transactions",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "Auteur",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "Comptes ",
 		"item_Types": "Types",
 		"item_Upgrade_history": "Histoire de mise à jour",
-		"item_Validator Accounts": "Comptes Validateur"
-	},
+		"item_Validator Accounts": "Comptes Validateur",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
+  },
 	"Network-overview": {
 		"Explore": "Explorer",
 		"IntroductionText": "POLKASCAN fait partie de WEB3SCAN et offre des données multichaînes en temps réel. WEB3SCAN rend les données de la blockchain accessibles et compréhensibles pour tous.",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

@@ -82,6 +82,8 @@ import {DemocracyPreimageDetailComponent} from './pages/democracy-preimage-detai
 import {ExtrinsicParamDownloadComponent} from './pages/extrinsic-param-download/extrinsic-param-download.component';
 import {AssetListComponent} from "./pages/asset-list/asset-list.component";
 import {AssetDetailComponent} from "./pages/asset-detail/asset-detail.component";
+import {EthereumBridgeIncomeTransferListComponent} from "./pages/ethereum-bridge-income-transfer-list/ethereum-bridge-income-transfer-list.component";
+import {EthereumBridgeOutcomeTransferListComponent} from "./pages/ethereum-bridge-outcome-transfer-list/ethereum-bridge-outcome-transfer-list.component";
 
 const routes: Routes = [
   { path: '', component: NetworkOverviewComponent, },
@@ -177,7 +179,10 @@ const routes: Routes = [
       { path: 'analytics/charts', component: AnalyticsChartsComponent },
       { path: 'analytics/chart/:id', component: AnalyticsChartDetailComponent },
       { path: 'asset', component: AssetListComponent},
-      { path: 'asset/:asset_id', component: AssetDetailComponent}
+      { path: 'asset/:asset_id', component: AssetDetailComponent},
+      { path: 'ethereum-bridge/income', component: EthereumBridgeIncomeTransferListComponent},
+      { path: 'ethereum-bridge/outcome', component: EthereumBridgeOutcomeTransferListComponent},
+
     ]},
   { path: 'settings', component: SettingsComponent},
   { path: '404', component: NotFoundComponent},

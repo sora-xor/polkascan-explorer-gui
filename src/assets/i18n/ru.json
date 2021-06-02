@@ -284,7 +284,9 @@
 		"Number": "Номер",
 		"Runtime Versions": "Версии среды выполнения",
 		"Sender": "Отправитель",
-		"Transactions": "Транзакции"
+		"Transactions": "Транзакции",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "Автор",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "Аккаунты Сокровищницы",
 		"item_Types": "Типы",
 		"item_Upgrade_history": "История Обновлений",
-		"item_Validator Accounts": "Валидаторы"
-	},
+		"item_Validator Accounts": "Валидаторы",
+    "item_Ethereum_bridge_income": "Ethereum->SORA транзакции",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum транзакции"
+  },
 	"Network-overview": {
 		"Explore": "Изучить",
 		"IntroductionText": "Вводный текст",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Ассет"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

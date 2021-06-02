@@ -284,7 +284,9 @@
 		"Number": "Numara",
 		"Runtime Versions": "Runtime Sürümleri",
 		"Sender": "Gönderen",
-		"Transactions": "İşlemler"
+		"Transactions": "İşlemler",
+    "EthereumToSORA": "Ethereum -> SORA",
+    "SORAtoEthereum": "SORA -> Ethereum"
 	},
 	"Democracy-preimage-detail": {
 		"Author": "Yazar",
@@ -447,8 +449,10 @@
 		"item_Treasury Accounts": "Hazine Hesapları",
 		"item_Types": "Türler",
 		"item_Upgrade_history": "İyileştirme geçmişi",
-		"item_Validator Accounts": "Validatör Hesaplar"
-	},
+		"item_Validator Accounts": "Validatör Hesaplar",
+    "item_Ethereum_bridge_income": "Ethereum->SORA transfers",
+    "item_Ethereum_bridge_outcome": "SORA->Ethereum transfers"
+  },
 	"Network-overview": {
 		"Explore": "Keşfet",
 		"IntroductionText": "POLKASCAN, WEB3SCAN'ın bir parçasıdır ve gerçek zamanlı çok zincirli veriler sunar. WEB3SCAN, blokzincir verilerine erişir ve anlaşılabilir hale getirir.",
@@ -739,5 +743,17 @@
   },
   "Asset-Detail": {
     "Asset": "Asset"
+  },
+  "EthereumBridge": {
+    "Transfers": "Bridge transfers",
+    "Extrinsic ID": "Extrinsic ID",
+    "Block": "Block",
+    "Signed": "Signed",
+    "Success": "Success",
+    "No": "No",
+    "Yes": "Yes",
+    "No items": "No items",
+    "Details": "Details",
+    "View next": "View next"
   }
 }

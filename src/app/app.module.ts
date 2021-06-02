@@ -124,6 +124,8 @@ import {MarkdownModule} from 'ngx-markdown';
 import { ExtrinsicParamDownloadComponent } from './pages/extrinsic-param-download/extrinsic-param-download.component';
 import {AssetListComponent} from "./pages/asset-list/asset-list.component";
 import {AssetDetailComponent} from "./pages/asset-detail/asset-detail.component";
+import {EthereumBridgeIncomeTransferListComponent} from "./pages/ethereum-bridge-income-transfer-list/ethereum-bridge-income-transfer-list.component";
+import {EthereumBridgeOutcomeTransferListComponent} from "./pages/ethereum-bridge-outcome-transfer-list/ethereum-bridge-outcome-transfer-list.component";
 
 export class MyClock extends TimeagoClock {
   tick(then: number): Observable<number> {
@@ -208,7 +210,9 @@ export class MyClock extends TimeagoClock {
     AddressComponent,
     ExtrinsicParamDownloadComponent,
     AssetListComponent,
-    AssetDetailComponent
+    AssetDetailComponent,
+    EthereumBridgeIncomeTransferListComponent,
+    EthereumBridgeOutcomeTransferListComponent
   ],
   imports: [
     BrowserModule,
