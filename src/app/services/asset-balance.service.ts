@@ -17,20 +17,31 @@
  * You should have received a copy of the GNU General Public License
  * along with Polkascan. If not, see <http://www.gnu.org/licenses/>.
  *
- * extrinsic.class.ts
+ * asset-balance.service.ts
  */
 
-import { Resource, DocumentCollection } from 'ngx-jsonapi';
+import { Injectable } from '@angular/core';
+import {Autoregister, Service} from 'ngx-jsonapi';
+import {AssetBalance} from '../classes/asset.class';
 
-export class AssetBalance extends Resource {
-}
+@Injectable({
+  providedIn: 'root'
+})
 
-export class Asset extends Resource {
-  public attributes = {
+export class AssetBalanceService extends Service<AssetBalance> {
 
-  };
+    public constructor() {
+        super();
+        this.register();
+    }
 
-  public relationships = {
-    accounts: new DocumentCollection<AssetBalance>(),
-  };
+    public resource = AssetBalance;
+    public type = 'assetbalance';
+    public path = 'assetbalance';
+
+    public jsonApiRootUrl;
+
+    public getPrePath(): string {
+      return this.jsonApiRootUrl;
+    }
 }
