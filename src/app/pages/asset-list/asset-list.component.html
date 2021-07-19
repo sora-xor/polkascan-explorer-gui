@@ -35,7 +35,7 @@
                 <td width="5%">
                   <i class="fa fa-book"></i>
                 </td>
-                <td>{{ asset.attributes.asset_id }}</td>
+                <td><a routerLink="{{ networkURLPrefix }}/asset/{{ asset.attributes.asset_id }}">{{ asset.attributes.asset_id }}</a></td>
                 <td>{{ asset.attributes.symbol }}</td>
                 <td>{{ asset.attributes.name }}</td>
                 <td>{{ asset.attributes.precision }}</td>
