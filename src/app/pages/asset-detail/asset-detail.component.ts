@@ -24,8 +24,9 @@ import { Component, OnInit } from '@angular/core';
 import {Observable, Subscription} from "rxjs";
 import {ActivatedRoute, ParamMap} from "@angular/router";
 import {switchMap} from "rxjs/operators";
-import {Asset} from "../../classes/asset.class";
+import {Asset, AssetBalance} from "../../classes/asset.class";
 import {AssetService} from "../../services/asset.service";
+import {AssetBalanceService} from "../../services/asset-balance.service";
 import {AppConfigService} from "../../services/app-config.service";
 
 @Component({
@@ -43,7 +44,8 @@ export class AssetDetailComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private assetService: AssetService,
-    private appConfigService: AppConfigService
+    private appConfigService: AppConfigService,
+    private assetBalanceService: AssetBalanceService,
   ) { }
 
   ngOnInit() {
@@ -52,10 +54,13 @@ export class AssetDetailComponent implements OnInit {
       this.networkURLPrefix = this.appConfigService.getUrlPrefix();
       this.asset$ = this.activatedRoute.paramMap.pipe(
         switchMap((params: ParamMap) => {
-          return this.assetService.get(params.get('asset_id'));
+          return this.assetService.get(params.get('asset_id'), { include: ['accounts'] });
         })
       );
     });
   }
 
+  protected divider(asset) {
+    return Math.pow(10, asset.attributes.precision);
+  }
 }

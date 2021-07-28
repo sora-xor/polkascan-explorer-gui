@@ -45,6 +45,35 @@
           </div>
         </div>
       </div>
+      <!-- asset holders -->
+      <div class="card events-card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ 'Asset-Detail.Asset Holders' | translate }}
+          </p>
+          <span class="card-header-icon">
+            <span class="icon"><i class="fa fa-user fa-2x"></i></span>
+          </span>
+        </header>
+        <div class="card-table">
+          <div class="content">
+            <app-loading-box *ngIf="!asset || asset.is_loading"></app-loading-box>
+            <table class="table is-fullwidth is-striped" *ngIf="asset">
+              <thead>
+                <tr>
+                  <th>Account</th>
+                  <th>Balance</th>
+                </tr>
+                <tbody>
+                  <tr *ngFor="let account of asset.relationships.accounts.data; trackBy: asset.relationships.accounts.trackBy">
+                    <td><a routerLink="{{ networkURLPrefix }}/account/{{ account.attributes.address}}">{{ account.attributes.address }}</a></td>
+                    <td>{{ account.attributes.balance_free_int / divider(asset) }}</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </div>
