@@ -67,7 +67,7 @@
                 <tbody>
                   <tr *ngFor="let account of asset.relationships.accounts.data; trackBy: asset.relationships.accounts.trackBy">
                     <td><a routerLink="{{ networkURLPrefix }}/account/{{ account.attributes.address}}">{{ account.attributes.address }}</a></td>
-                    <td>{{ account.attributes.balance_free_int / divider(asset) }}</td>
+                    <td>{{ account.attributes.balance_free_int / divider(asset) | number }}</td>
                   </tr>
                 </tbody>
             </table>
