@@ -51,7 +51,7 @@ export class EventTableComponent implements OnInit {
   }
 
   public formatBalance(balance: number, precision: number) {
-    return balance / Math.pow(10, precision ? precision : this.networkTokenDecimals);
+    return balance / Math.pow(10, precision);
   }
 
   paramName(name: string) {
