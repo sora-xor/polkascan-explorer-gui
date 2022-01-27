@@ -31,11 +31,11 @@
                             </tr>
                             <tr>
                               <td>{{ 'BalanceTransfer.Value' | translate }}</td>
-                              <td>{{ formatBalance(balanceTransfer.attributes.value) | number:'1.0-15' }} {{ balanceTransfer.attributes.currency }}</td>
+                              <td>{{ formatBalance(balanceTransfer.attributes.value, balanceTransfer.attributes.precision) | number:'1.0-15' }} {{ balanceTransfer.attributes.currency }}</td>
                             </tr>
                              <tr>
                               <td>{{ 'BalanceTransfer.Fee' | translate }}</td>
-                              <td>{{ formatBalance(balanceTransfer.attributes.fee) | number:'1.0-15' }} {{ networkTokenSymbol }}</td>
+                              <td>{{ formatBalance(balanceTransfer.attributes.fee, 18) | number:'1.0-15' }} {{ networkTokenSymbol }}</td>
                             </tr>
                             <tr>
                               <td width="20%">{{ 'BalanceTransfer.Event ID' | translate }}</td>
