@@ -33,6 +33,7 @@ export class RenderTypeComponent implements OnInit {
   @Input() networkURLPrefix = null;
   @Input() networkTokenDecimals = 0;
   @Input() networkTokenSymbol: string;
+  @Input() attributes = null;
 
   constructor() { }
 
@@ -40,7 +41,8 @@ export class RenderTypeComponent implements OnInit {
   }
 
   public formatBalance(balance: number) {
-    return balance / Math.pow(10, this.networkTokenDecimals);
+    let asset = this.attributes.find(a => a['type'] == 'AssetId')
+    return balance / Math.pow(10, asset ? asset['precision'] : this.networkTokenDecimals);
   }
 
 }
