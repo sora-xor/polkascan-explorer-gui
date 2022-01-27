@@ -66,8 +66,8 @@ export class BalancesTransferDetailComponent implements OnInit, OnDestroy {
     });
   }
 
-  public formatBalance(balance: number) {
-    return balance / Math.pow(10, this.networkTokenDecimals);
+  public formatBalance(balance: number, precision: number) {
+    return balance / Math.pow(10, precision);
   }
 
   ngOnDestroy() {
