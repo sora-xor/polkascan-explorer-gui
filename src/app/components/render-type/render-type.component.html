@@ -18,7 +18,7 @@
   <div *ngSwitchCase="'Compact<Balance>'">{{ formatBalance(item.value) | number:'1.0-15'}}</div>
   <div *ngSwitchCase="'Compact<BalanceOf>'">{{ formatBalance(item.value) | number:'1.0-15'}}</div>
   <div *ngSwitchCase="'AssetId'">
-    <a routerLink="{{ networkURLPrefix }}/asset/{{ item.value }}"> {{ item.currency }}</a>
+    <a routerLink="{{ networkURLPrefix }}/asset/{{ item.value }}"> {{ item.currency ? item.currency : item.value }}</a>
   </div>
   <div *ngSwitchCase="'Compact<Moment>'">{{ item.value | date:'medium' }}</div>
   <div *ngSwitchCase="'Bytes'"><markdown [data]="item.value"></markdown></div>
