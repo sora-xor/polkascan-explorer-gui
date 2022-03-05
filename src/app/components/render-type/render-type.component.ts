@@ -41,7 +41,7 @@ export class RenderTypeComponent implements OnInit {
   }
 
   public formatBalance(balance: number) {
-    let asset = this.attributes.find(a => a['type'] == 'AssetId')
+    let asset = this.attributes ? this.attributes.find(a => a['type'] == 'AssetId') : null;
     return balance / Math.pow(10, asset ? asset['precision'] : this.networkTokenDecimals);
   }
 
